@@ -1,7 +1,11 @@
 # synapse-docker
-Docker package for synapse, pure, no other additions like turn server. Main purpose is to provide minimalistic configuration. and using later docker-compose to orchestrate infrastructure
+Docker package for synapse, pure, no other additions like turn server. 
 
-## Generate configuration
+Main purpose is to provide minimalistic configuration so it can be used well with docker-compose to orchestrate infrastructure.
+
+Please reffer to [Matrix Synapse Project](https://github.com/matrix-org/synapse) for details
+
+## 1. Generate configuration
 ```
 docker run -it --rm \
     -v /config/folder:/var/matrix/conf \
@@ -10,7 +14,7 @@ docker run -it --rm \
     petercipov/synapse-docker
 ```
 
-## Run image
+## 2. Run image
 For running you need to have prepared homeserver.yaml configuration and provide configuration folder where this file is located. i.e, /var/matrix/conf/homeserver.yaml 
 ```
 docker run \
