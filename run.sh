@@ -1,6 +1,5 @@
 #!/bin/bash
-set -x
-if [ $MATRIX_GENERATE = "false"] ; then
+if [ $MATRIX_GENERATE = "false" ]; then
   echo "RUNNING INSTANCE"  
   python2.7 -m synapse.app.homeserver --config-path /var/matrix/conf/homeserver.yaml
 else
