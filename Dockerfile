@@ -1,5 +1,5 @@
 FROM debian:9.4-slim
-ARG SYNAPSE_VERSION=0.27.4-1
+ARG SYNAPSE_VERSION=0.29.1
 ENV MATRIX_UID=991 MATRIX_GID=991 MATRIX_GENERATE=false MATRIX_SERVER_NAME=change.me MATRIX_SEND_STATS=no
 
 ADD https://matrix.org/packages/debian/repo-key.asc /var/matrix/repo-key.asc
